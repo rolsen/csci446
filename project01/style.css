@@ -46,12 +46,28 @@ div#menuBar li a:hover{
 
 div#main {
 	float: left;
+	/*width: 26em;*/
 }
 
 div#progress {
 	background-color: #C3DAF1;
 	float: right;
 	padding 0 1em;
+}
+
+div#mainText {
+	float: left;
+	width: 13em;
+}
+
+div#mainForm {
+	float: right;
+	width: 13em;
+}
+
+div#mainForm select {
+	margin-top: 2em;
+	margin-bottom: 2em;
 }
 
 div#footer {

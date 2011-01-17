@@ -16,3 +16,25 @@ div#header {
 	background-color: #CCCCCC;
 	padding: .5em;
 }
+
+div#menuBar {
+}
+
+div#menuBar ul{
+	background-color: #000000;
+	float: left;
+	list-style: none;
+	margin: 0 0 .5em 0;
+	padding: 0;
+	width: 100%;
+}
+
+div#menuBar li{
+	float: left;
+}
+div#menuBar li a {
+	color: #FFFFFF;
+	display: block;
+	padding: .6em 1em;
+	text-decoration: none;
+}

@@ -1,7 +1,11 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
 <!-- Rory Olsen, CSCI446, Project01 -->
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Life Figure-Outer Application</title>
 </head>
 <body>
@@ -25,20 +29,20 @@
 	<div id="main">
 		<h2>Lorem Ipsum Dolor Sit Amet.</h2>
 		<div id="mainText">
-			<p>How would you like to feel? (choose all that apply)</p>
 			<p>How do you feel today?</p>
+			<p>How would you like to feel? (choose all that apply)</p>
 		</div> <!-- End mainText div -->
 		
 		<div id="mainForm">
-		<form id="feelerForm">
-			<input type="text" id="feelToday">
-			<select type="fixed" id="likeToFeel" multiple="multiple">
+		<form id="feelerForm" action="feeler.php"> <!-- need to add feeler.php -->
+			<input type="text" id="feelToday" />
+			<select id="likeToFeel" multiple="multiple">
 				<option value="numb">Comfortably Numb</option>
 				<option value="poop">Grumpy as poop, you jerk</option>
 				<option value="happy">Happy like I'm on controlled substances</option>
 				<option value="normal">Normal. Absolutely Normal.</option>
 			</select>
-			<input type="submit" id="feelButton" value="Feel me!">
+			<input type="submit" id="feelButton" value="Feel me!" />
 		</form>
 		</div> <!-- End mainForm div -->
 	</div> <!-- End main div -->
@@ -49,7 +53,7 @@
 	</div> <!-- End progress div -->
 	
 	<div id="footer">
-		<p>&copy 2011 Borg-Like Monstrosity of Mind Control, Inc. All rights reserved.</p>
+		<p>&copy; 2011 Borg-Like Monstrosity of Mind Control, Inc. All rights reserved.</p>
 	</div> <!-- End footer div -->		
 </body>
 </html>

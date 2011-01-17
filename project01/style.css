@@ -15,7 +15,9 @@ div#header h1 {
 
 div#header {
 	background-color: #CCC;
-	padding: .5em;
+	padding-top: .2em;
+	padding-bottom: .2em;
+	padding-left: .5em;
 }
 
 div#menuBar {
@@ -52,7 +54,11 @@ div#main {
 div#progress {
 	background-color: #C3DAF1;
 	float: right;
-	padding 0 1em;
+	margin-right: .5em;
+	padding-top: 0;
+	padding-left: .2em;
+	padding-right: 2em;
+	padding-bottom: .2em;
 }
 
 div#mainText {
@@ -73,10 +79,11 @@ div#mainForm select {
 div#footer {
 	background-color: #DDD;
 	position: relative;
-	margin-top: 400px; /* negative value of footer height */
-	height: 300px;
+	margin-top: 22em;
+	height: 3em;
 	padding-bottom: .01em;
 	padding-top: .01em;
-	text-indent: 5em;
+	text-indent: 20em;
+	font-size: .8em;
 }
 	

@@ -1,6 +1,6 @@
 body {
 	font-family: Helvetica, Arial;
-	background-color: #EEE;
+	background-color: #F5F5F5;
 }
 
 div#header p {
@@ -43,3 +43,24 @@ div#menuBar li a {
 div#menuBar li a:hover{
 	color: orange;
 }
+
+div#main {
+	float: left;
+}
+
+div#progress {
+	background-color: #C3DAF1;
+	float: right;
+	padding 0 1em;
+}
+
+div#footer {
+	background-color: #DDD;
+	position: relative;
+	margin-top: 400px; /* negative value of footer height */
+	height: 300px;
+	padding-bottom: .01em;
+	padding-top: .01em;
+	text-indent: 5em;
+}
+	

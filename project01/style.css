@@ -38,3 +38,7 @@ div#menuBar li a {
 	padding: .6em 1em;
 	text-decoration: none;
 }
+
+div#menuBar li a:hover{
+	color: orange;
+}

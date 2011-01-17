@@ -7,6 +7,17 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Life Figure-Outer Application</title>
+	<script type="text/javascript">
+		function processFeelerForm(form)
+		{
+			var feelerz = form.feelToday.value;
+			if (!form.feelToday.value) {
+				alert("Surely you feel something!");
+			}
+			else {
+			}
+		}
+	</script> <!-- end javascript -->
 </head>
 <body>
 	<div id="header">
@@ -34,7 +45,7 @@
 		</div> <!-- End mainText div -->
 		
 		<div id="mainForm">
-		<form id="feelerForm" action="feeler.php"> <!-- need to add feeler.php -->
+		<form id="feelerForm" action="" method="POST">
 			<input type="text" id="feelToday" />
 			<select id="likeToFeel" multiple="multiple">
 				<option value="numb">Comfortably Numb</option>
@@ -42,7 +53,7 @@
 				<option value="happy">Happy like I'm on controlled substances</option>
 				<option value="normal">Normal. Absolutely Normal.</option>
 			</select>
-			<input type="submit" id="feelButton" value="Feel me!" />
+			<input type="button" id="feelButton" value="Feel me!" onClick="processFeelerForm(this.form)" />
 		</form>
 		</div> <!-- End mainForm div -->
 	</div> <!-- End main div -->

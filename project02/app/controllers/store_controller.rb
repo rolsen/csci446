@@ -42,6 +42,11 @@ class StoreController < ApplicationController
   		render :action => 'checkout'
   	end
   end
+  
+protected
+
+	def authorize
+	end
   		
 private
 	def find_cart

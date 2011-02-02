@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-	require 'diges/sha1'
+	require 'digest/sha1'
 	
 	validates_presence_of 	:name
 	validates_uniqueness_of :name

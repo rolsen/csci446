@@ -28,7 +28,19 @@
 			</dict>
 			<dict>
 				<key>DocumentURL</key>
-				<string>file://localhost/Users/Ro/Desktop/csci446/src/project04/app/views/layouts/untitled</string>
+				<string>file://localhost/Users/Ro/Desktop/csci446/src/project04/app/views/article/index.html.erb</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/Ro/Desktop/csci446/src/project04/app/views/layouts/articles.html.erb</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/Ro/Desktop/csci446/src/project04/app/controllers/application_controller.rb</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>

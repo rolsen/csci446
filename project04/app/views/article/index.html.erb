@@ -1,1 +1,10 @@
 <h1>Articl.es</h1>
+<h3>Hip subtitle</h3>
+
+<table>
+  <% @articles.each do |article| %>
+  	<tr>
+  	  <td><%= article.name %></td>
+  	 </tr>
+  <% end %>
+</table>

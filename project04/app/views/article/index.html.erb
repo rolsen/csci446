@@ -29,7 +29,7 @@
 	  	  <td><%=h article.title %></td>
 	  	  <td><%=h article.author %></td>
 	  	  <td><%=h truncate(article.fulltext, :length => 20) %></td>
-	  	  <td><%= article.created_at %></td>
+	  	  <td><%= article.created_at.to_s(:datetime) %></td>
 	  	  <td>Edit and stuff goes here</td>
 	  	</tr>
   	<% end %>

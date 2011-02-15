@@ -1,19 +1,40 @@
 <% content_for :subtitle do %>
-  <h3>...with a name .com hipsters love!</h3>
+...with a name .com hipsters love!
 <% end %>
 
 <div id="title">
 	<h2>All the World's Articles</h2>
 </div>
 
-<div id="addLink">
-	<%= link_to "Create an Article", new_article_path %>
-</div>
 
-<table>
-  <% @articles.each do |article| %>
+<table id="articles_list">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Article Text</th>
+      <th>Creation Date</th>
+      <th></ths>
+  </thead>
+  <tfoot>
   	<tr>
-  	  <td><%= article.name %></td>
-  	 </tr>
-  <% end %>
+  		<td colspan="5">
+  			<p><%= pluralize(@articles.size, 'article') %></p>
+  		</td>
+  	</tr>
+  </tfoot>
+  <tbody>
+	  <% @articles.each do |article| %>
+	  	<tr>
+	  	  <td><%=h article.title %></td>
+	  	  <td><%=h article.author %></td>
+	  	  <td><%=h truncate(article.fulltext, :length => 20) %></td>
+	  	  <td><%= article.created_at %></td>
+	  	  <td>Edit and stuff goes here</td>
+	  	</tr>
+  	<% end %>
+  </tbody>
+  <tfoot>
+  
+  </tfoot>
 </table>

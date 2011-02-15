@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <title>Articl.es -- All the World's Articles (with a name .com hipsters love)</title>
+  <%= stylesheet_link_tag "articles", :media => "all" %>
+</head>
+<body id="article">
+  <div id="header">
+  	<h1>Articl.es</h1>
+  	<h3><%= yield(:subtitle) || display_random_subtitle %></h3>
+  </div>
+  <div id="main">
+  		<% if flash[:notice] -%>
+  			<div id="notice"><%= flash[:notice] %></div>
+  		<% end %>
+  		<%= yield %>
+  </div>
+</body>
+</html>

@@ -6,6 +6,6 @@ class Article < ActiveRecord::Base
   
 protected
   def no_sallys
-    #errors.add_to_base("No authors named Sally are allowed.") if author.include? /sally/i
+    errors.add_to_base("No authors named Sally are allowed.") if author.include? /sally/i
   end  
 end

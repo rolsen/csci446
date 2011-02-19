@@ -8,7 +8,7 @@
 <body id="article">
   <div id="header">
   	<h1>Articl.es</h1>
-  	<h3><%= yield(:subtitle) || display_random_subtitle %></h3>
+  	<h3><%= yield(:subtitle) || render(:partial => @random_subtitle) %></h3>
   </div>
   <div id="main">
   		<% if flash[:notice] -%>

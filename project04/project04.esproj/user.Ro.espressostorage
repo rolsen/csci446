@@ -99,13 +99,13 @@
 			</dict>
 			<dict>
 				<key>DocumentURL</key>
-				<string>file://localhost/Users/Ro/.Trash/untitled</string>
+				<string>file://localhost/Users/Ro/Desktop/csci446/src/project04/config/initializers/application.rb</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>
 			<dict>
 				<key>DocumentURL</key>
-				<string>file://localhost/Users/Ro/Desktop/csci446/src/project04/config/initializers/application.rb</string>
+				<string>file://localhost/Users/Ro/Desktop/csci446/src/project04/app/views/article/new.html.erb</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>

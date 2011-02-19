@@ -2,13 +2,13 @@
 module ApplicationHelper
 
 #protected
-#  subtitles[
+#  subtitles = [
 #	'...with a name .com hipsters love!', 
 #	'...what\'s "Articl" in Spanish anyway?',
 #	'...my cousin works for Bit.ly',
 #	'...not just for the country of Spain']
-  def subtitle
+  def random_subtitle
     #:subtitle = rand( subtitles )
-    render(:partial => '...')
+    random_subtitle = 'yell heah!'
   end
 end

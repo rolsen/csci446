@@ -6,6 +6,10 @@
 	<h2>All the World's Articles</h2>
 </div>
 
+<div id="new_link">
+	<%= link_to image_tag('add.png'), :action => 'new' %>
+	<%= link_to 'new article', :action => 'new', :title => 'Create a new article' %>
+</div>
 
 <table id="articles_list">
   <thead>

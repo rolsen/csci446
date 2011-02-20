@@ -308,3 +308,10 @@ ActionController::RoutingError (No route matches "/" with {:method=>:get}):
   /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
 
 Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-20 15:23:40) [GET]
+  [4;35;1mArticle Load (2.3ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 146ms (View: 122, DB: 2) | 200 OK [http://localhost/]

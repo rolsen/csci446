@@ -1,1 +1,0 @@
-Time::DATE_FORMATS[:datetime] = "%A, %b. %e %Y"

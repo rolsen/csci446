@@ -1971,3 +1971,127 @@ Processing ArticlesController#show (for 127.0.0.1 at 2011-02-20 16:28:55) [GET]
 Rendering template within layouts/articles
 Rendering articles/show
 Completed in 59ms (View: 36, DB: 0) | 200 OK [http://localhost/articles/3]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-20 16:29:54) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 48ms (View: 25, DB: 0) | 200 OK [http://localhost/articles/3]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-20 16:29:55) [GET]
+  [4;35;1mArticle Load (2.1ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 247ms (View: 223, DB: 2) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-20 16:29:58) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 48ms (View: 25, DB: 0) | 200 OK [http://localhost/articles/3]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-20 16:29:59) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 137ms (View: 115, DB: 0) | 200 OK [http://localhost/articles/3/edit]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-20 16:30:02) [GET]
+  [4;36;1mArticle Load (2.1ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 156ms (View: 131, DB: 2) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-20 16:30:07) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 48ms (View: 25, DB: 0) | 200 OK [http://localhost/articles/3]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-20 16:30:11) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 50ms (View: 28, DB: 0) | 200 OK [http://localhost/articles/3/edit]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-20 16:30:43) [GET]
+  [4;35;1mArticle Load (2.1ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 155ms (View: 131, DB: 2) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-20 16:31:29) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 48ms (View: 25, DB: 0) | 200 OK [http://localhost/articles/3]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-20 16:34:22) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 150ms (View: 38, DB: 0) | 200 OK [http://localhost/articles/3]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-20 16:35:29) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 58ms (View: 36, DB: 0) | 200 OK [http://localhost/articles/3]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-20 16:36:16) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+
+ActionView::TemplateError (undefined method `format_simple' for #<ActionView::Base:0x245e960>) on line #21 of app/views/articles/show.html.erb:
+18: </p>
+19: 
+20: <p>
+21:   <%=h format_simple @article.fulltext %>
+22: </p>
+
+    app/views/articles/show.html.erb:21
+    app/controllers/articles_controller.rb:18:in `show'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (107.6ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-20 16:36:28) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 58ms (View: 35, DB: 0) | 200 OK [http://localhost/articles/3]

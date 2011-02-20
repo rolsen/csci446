@@ -13,21 +13,10 @@
 
 <h2><%=h @article.title %></h2>
 
-<p>
-  <b>Author:</b>
-  <%=h @article.author %>
+<p>by <%=h @article.author %>. <%= @article.update_count %> edits since 
+	<%= @article.created_at.to_s(:short) %>.
 </p>
 
 <p>
-  <b>Fulltext:</b>
-  <%=h @article.fulltext %>
+  <%=h  @article.fulltext %>
 </p>
-
-<p>
-  <b>Update count:</b>
-  <%=h @article.update_count %>
-</p>
-
-
-<%= link_to 'Edit', edit_article_path(@article) %> |
-<%= link_to 'Back', articles_path %>

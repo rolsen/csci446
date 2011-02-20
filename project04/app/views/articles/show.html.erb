@@ -1,0 +1,23 @@
+<p>
+  <b>Title:</b>
+  <%=h @article.title %>
+</p>
+
+<p>
+  <b>Author:</b>
+  <%=h @article.author %>
+</p>
+
+<p>
+  <b>Fulltext:</b>
+  <%=h @article.fulltext %>
+</p>
+
+<p>
+  <b>Update count:</b>
+  <%=h @article.update_count %>
+</p>
+
+
+<%= link_to 'Edit', edit_article_path(@article) %> |
+<%= link_to 'Back', articles_path %>

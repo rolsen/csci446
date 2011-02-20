@@ -1,7 +1,17 @@
-<p>
-  <b>Title:</b>
-  <%=h @article.title %>
-</p>
+<% content_for :subtitle do %>
+...what's "Articl" in Spanish anyway?
+<% end %>
+
+<div id="link_bar">
+	<%= link_to image_tag('arrow_left.png'), articles_path %>
+	<%= link_to 'list all articles', articles_path %>
+	<%= link_to image_tag('application_edit.png'), edit_article_path %>
+	<%= link_to 'edit', edit_article_path %>
+	<%= link_to image_tag('delete.png'), @article, :confirm => 'Are you sure?', :method => 'delete' %>
+	<%= link_to 'delete', @article, :confirm => 'Are you sure?', :method => 'delete' %>
+</div>
+
+<h2><%=h @article.title %></h2>
 
 <p>
   <b>Author:</b>

@@ -284,3 +284,27 @@ Processing ArticlesController#index (for 127.0.0.1 at 2011-02-20 14:38:49) [GET]
 Rendering template within layouts/articles
 Rendering articles/index
 Completed in 137ms (View: 112, DB: 2) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-20 15:21:04) [GET]
+  [4;36;1mArticle Load (2.2ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 137ms (View: 112, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-20 15:21:14) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)

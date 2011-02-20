@@ -1,24 +1,43 @@
-<h1>Listing articles</h1>
+<% content_for :subtitle do %>
+...with a name .com hipsters love!
+<% end %>
+
+<div id="page_title">
+	<h2>All the World's Articles</h2>
+</div>
+
+<div id="link">
+	<%= link_to image_tag('add.png'), new_article_path, :title => "Create a new article" %>
+	<%= link_to 'New Article', new_article_path, :title => "Create a new article" %>
+</div>
 
 <table>
-  <tr>
+  <thead>
     <th>Title</th>
     <th>Author</th>
     <th>Fulltext</th>
-    <th>Update count</th>
-  </tr>
-
-<% @articles.each do |article| %>
-  <tr>
-    <td><%=h article.title %></td>
-    <td><%=h article.author %></td>
-    <td><%=h article.fulltext %></td>
-    <td><%=h article.update_count %></td>
-    <td><%= link_to 'Show', article %></td>
-    <td><%= link_to 'Edit', edit_article_path(article) %></td>
-    <td><%= link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
+    <th>Creation Date</th>
+    <th></th>
+  </thead>
+  <tfoot>
+  	<tr colspan="5">
+  		<td><%= pluralize(@articles.size, "article") %></td>
+  	</tr>
+  </tfoot>
+  <tbody>
+		<% @articles.each do |article| %>
+		  <tr>
+		    <td><%=h article.title %></td>
+		    <td><%=h article.author %></td>
+		    <td><%=h truncate(article.fulltext, :length => 20) %></td>
+		    <td><%=h article.created_at.to_s(:long) %></td>
+		    <td><%= link_to image_tag('find.png'), article %>
+			    <%= link_to image_tag('application_edit.png'), edit_article_path(article) %>
+					<%= link_to image_tag('delete.png'), article, :confirm => 'Are you sure?', :method => :delete %>
+				</td>
+		  </tr>
+		<% end %>
+	</tbody>
 </table>
 
 <br />

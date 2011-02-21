@@ -31,15 +31,11 @@
 		    <td><%=h article.author %></td>
 		    <td><%=h truncate(article.fulltext, :length => 20) %></td>
 		    <td><%=h article.created_at.to_s(:create_date_and_day) %></td>
-		    <td><%= link_to image_tag('find.png'), article %>
-			    <%= link_to image_tag('application_edit.png'), edit_article_path(article) %>
-					<%= link_to image_tag('delete.png'), article, :confirm => 'Are you sure?', :method => :delete %>
+		    <td><%= link_to image_tag('find.png'), article, :title => 'view article' %>
+			    <%= link_to image_tag('application_edit.png'), edit_article_path(article), :title => 'edit article' %>
+					<%= delete_link_image %>
 				</td>
 		  </tr>
 		<% end %>
 	</tbody>
 </table>
-
-<br />
-
-<%= link_to 'New article', new_article_path %>

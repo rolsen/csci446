@@ -3955,3 +3955,196 @@ Processing ArticlesController#show (for 127.0.0.1 at 2011-02-21 02:17:42) [GET]
 Rendering template within layouts/articles
 Rendering articles/show
 Completed in 55ms (View: 31, DB: 0) | 200 OK [http://localhost/articles/15]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-21 02:21:14) [GET]
+  Parameters: {"id"=>"15"}
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 65ms (View: 42, DB: 0) | 200 OK [http://localhost/articles/15]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-21 02:21:18) [GET]
+  Parameters: {"id"=>"15"}
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 46ms (View: 23, DB: 0) | 200 OK [http://localhost/articles/15/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-21 02:21:20) [PUT]
+  Parameters: {"article"=>{"author"=>"Unknown", "title"=>"10 Tips For Sleeping on Airplanes", "fulltext"=>"We all want to arrive at our destination relaxed and refreshed but that does not always happen. Getting some sleep when traveling across time zones or on long flights is often necessary but not always accomplished. Here are some tips to help you get some shut-eye on your next flight."}, "commit"=>"Save Changes", "authenticity_token"=>"Jr5s7llgEEPf2V59bPu06RgUCjlGrwiV5Dn/Y2jY0bY=", "id"=>"15"}
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Redirected to http://localhost:3000/articles/15
+Completed in 123ms (DB: 0) | 302 Found [http://localhost/articles/15]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-21 02:21:20) [GET]
+  Parameters: {"id"=>"15"}
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 54ms (View: 31, DB: 0) | 200 OK [http://localhost/articles/15]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-21 02:21:22) [GET]
+  Parameters: {"id"=>"15"}
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 48ms (View: 25, DB: 0) | 200 OK [http://localhost/articles/15/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-21 02:21:24) [PUT]
+  Parameters: {"article"=>{"author"=>"Unknown", "title"=>"10 Tips For Sleeping on Airplanes", "fulltext"=>"We all want to arrive at our destination relaxed and refreshed but that does not always happen. Getting some sleep when traveling across time zones or on long flights is often necessary but not always accomplished. Here are some tips to help you get some shut-eye on your next flight."}, "commit"=>"Save Changes", "authenticity_token"=>"Jr5s7llgEEPf2V59bPu06RgUCjlGrwiV5Dn/Y2jY0bY=", "id"=>"15"}
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Redirected to http://localhost:3000/articles/15
+Completed in 33ms (DB: 0) | 302 Found [http://localhost/articles/15]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-21 02:21:24) [GET]
+  Parameters: {"id"=>"15"}
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 59ms (View: 34, DB: 0) | 200 OK [http://localhost/articles/15]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-21 02:22:55) [GET]
+  Parameters: {"id"=>"15"}
+
+NoMethodError (undefined method `update_count' for nil:NilClass):
+  app/models/article.rb:7
+  app/controllers/articles_controller.rb:19:in `show'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (93.4ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-21 02:23:09) [GET]
+  Parameters: {"id"=>"15"}
+
+NoMethodError (undefined method `update_count' for :article:Symbol):
+  app/models/article.rb:7
+  app/controllers/articles_controller.rb:19:in `show'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (186.1ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-21 02:23:22) [GET]
+  Parameters: {"id"=>"15"}
+
+SyntaxError (/Users/Ro/Desktop/csci446/src/project04/app/models/article.rb:7: syntax error, unexpected tOP_ASGN, expecting kEND
+	before_save :update_count += 1
+	                            ^):
+  app/controllers/articles_controller.rb:19:in `show'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (91.4ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-21 02:27:00) [GET]
+  Parameters: {"id"=>"15"}
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 54ms (View: 31, DB: 0) | 200 OK [http://localhost/articles/15]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-21 02:27:04) [GET]
+  Parameters: {"id"=>"15"}
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 48ms (View: 25, DB: 0) | 200 OK [http://localhost/articles/15/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-21 02:27:06) [PUT]
+  Parameters: {"article"=>{"author"=>"Unknown", "title"=>"10 Tips For Sleeping on Airplanes", "fulltext"=>"We all want to arrive at our destination relaxed and refreshed but that does not always happen. Getting some sleep when traveling across time zones or on long flights is often necessary but not always accomplished. Here are some tips to help you get some shut-eye on your next flight."}, "commit"=>"Save Changes", "authenticity_token"=>"Jr5s7llgEEPf2V59bPu06RgUCjlGrwiV5Dn/Y2jY0bY=", "id"=>"15"}
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+  [4;35;1mArticle Update (0.5ms)[0m   [0mUPDATE "articles" SET "updated_at" = '2011-02-21 09:27:06', "update_count" = 1 WHERE "id" = 15[0m
+Redirected to http://localhost:3000/articles/15
+Completed in 35ms (DB: 1) | 302 Found [http://localhost/articles/15]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-21 02:27:06) [GET]
+  Parameters: {"id"=>"15"}
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 55ms (View: 31, DB: 0) | 200 OK [http://localhost/articles/15]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-21 02:27:07) [PUT]
+  Parameters: {"article"=>{"author"=>"Unknown", "title"=>"10 Tips For Sleeping on Airplanes", "fulltext"=>"We all want to arrive at our destination relaxed and refreshed but that does not always happen. Getting some sleep when traveling across time zones or on long flights is often necessary but not always accomplished. Here are some tips to help you get some shut-eye on your next flight."}, "commit"=>"Save Changes", "authenticity_token"=>"Jr5s7llgEEPf2V59bPu06RgUCjlGrwiV5Dn/Y2jY0bY=", "id"=>"15"}
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+  [4;36;1mArticle Update (0.6ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2011-02-21 09:27:07', "update_count" = 2 WHERE "id" = 15[0m
+Redirected to http://localhost:3000/articles/15
+Completed in 128ms (DB: 1) | 302 Found [http://localhost/articles/15]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-21 02:27:07) [GET]
+  Parameters: {"id"=>"15"}
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 57ms (View: 31, DB: 0) | 200 OK [http://localhost/articles/15]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-21 02:27:09) [GET]
+  Parameters: {"id"=>"15"}
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 47ms (View: 24, DB: 0) | 200 OK [http://localhost/articles/15/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-21 02:27:11) [PUT]
+  Parameters: {"article"=>{"author"=>"Unknown", "title"=>"10 Tips For Sleeping on Airplanes", "fulltext"=>"We all want to arrive at our destination relaxed and refreshed but that does not always happen. Getting some sleep when traveling across time zones or on long flights is often necessary but not always accomplished. Here are some tips to help you get some shut-eye on your next flight."}, "commit"=>"Save Changes", "authenticity_token"=>"Jr5s7llgEEPf2V59bPu06RgUCjlGrwiV5Dn/Y2jY0bY=", "id"=>"15"}
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+  [4;36;1mArticle Update (0.7ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2011-02-21 09:27:11', "update_count" = 3 WHERE "id" = 15[0m
+Redirected to http://localhost:3000/articles/15
+Completed in 36ms (DB: 1) | 302 Found [http://localhost/articles/15]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-21 02:27:11) [GET]
+  Parameters: {"id"=>"15"}
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 55ms (View: 31, DB: 0) | 200 OK [http://localhost/articles/15]

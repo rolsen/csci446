@@ -63,6 +63,7 @@ class ArticlesController < ApplicationController
 
     respond_to do |format|
       if @article.update_attributes(params[:article])
+      	@article.update_count += 1
         format.html { redirect_to(session[:edit_referer], :notice => 'Article was successfully updated.') }
         format.xml  { head :ok }
       else

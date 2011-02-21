@@ -2,6 +2,11 @@
 ...not just for the country of Spain
 <% end %>
 
+<% content_for :link_bar do %>
+	<%= back_link_image %>
+	<%= back_link %>
+<% end %>
+
 <h1>New article</h1>
 
 <% form_for(@article) do |f| %>

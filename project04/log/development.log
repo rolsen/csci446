@@ -3534,3 +3534,18 @@ Processing ArticlesController#index (for 127.0.0.1 at 2011-02-21 01:41:56) [GET]
 Rendering template within layouts/articles
 Rendering articles/index
 Completed in 176ms (View: 151, DB: 2) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-21 01:53:00) [GET]
+  [4;35;1mArticle Load (2.2ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 166ms (View: 141, DB: 2) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-21 01:53:02) [GET]
+  Parameters: {"id"=>"15"}
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 92ms (View: 68, DB: 0) | 200 OK [http://localhost/articles/15]

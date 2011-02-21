@@ -9,6 +9,8 @@
 	<%= edit_link %>
 	<%= delete_link_image %>
 	<%= delete_link %>
+	<%= mail_to '', image_tag('email.png'), :subject => @article.title, :body => article_url(@article), :title => 'email this article' %>
+	<%= mail_to '', 'email', :subject => @article.title, :body => article_url(@article), :title => 'email this article' %>
 <% end %>
 
 

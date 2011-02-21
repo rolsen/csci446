@@ -3549,3 +3549,409 @@ Processing ArticlesController#show (for 127.0.0.1 at 2011-02-21 01:53:02) [GET]
 Rendering template within layouts/articles
 Rendering articles/show
 Completed in 92ms (View: 68, DB: 0) | 200 OK [http://localhost/articles/15]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-21 02:06:37) [GET]
+  Parameters: {"id"=>"15"}
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 54ms (View: 30, DB: 0) | 200 OK [http://localhost/articles/15]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-21 02:06:39) [GET]
+  [4;36;1mArticle Load (2.2ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 165ms (View: 139, DB: 2) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-21 02:07:13) [GET]
+  [4;35;1mArticle Load (2.2ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 264ms (View: 239, DB: 2) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-21 02:07:19) [GET]
+  Parameters: {"id"=>"15"}
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 54ms (View: 30, DB: 0) | 200 OK [http://localhost/articles/15]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-21 02:07:21) [GET]
+  [4;35;1mArticle Load (2.2ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 164ms (View: 138, DB: 2) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-21 02:07:22) [GET]
+  [4;36;1mArticle Load (2.2ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 164ms (View: 138, DB: 2) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-21 02:07:25) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 59ms (View: 36, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-21 02:07:27) [GET]
+  [4;35;1mArticle Load (2.2ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 164ms (View: 138, DB: 2) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-21 02:09:13) [GET]
+  [4;36;1mArticle Load (2.2ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 178ms (View: 152, DB: 2) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-21 02:09:15) [GET]
+  Parameters: {"id"=>"15"}
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 58ms (View: 35, DB: 0) | 200 OK [http://localhost/articles/15/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-21 02:10:36) [GET]
+  Parameters: {"id"=>"15"}
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 48ms (View: 25, DB: 0) | 200 OK [http://localhost/articles/15/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-21 02:10:40) [PUT]
+  Parameters: {"article"=>{"author"=>"Unknown", "title"=>"10 Tips For Sleeping on Airplanes", "fulltext"=>"We all want to arrive at our destination relaxed and refreshed but that does not always happen. Getting some sleep when traveling across time zones or on long flights is often necessary but not always accomplished. Here are some tips to help you get some shut-eye on your next flight."}, "commit"=>"Save Changes", "authenticity_token"=>"Jr5s7llgEEPf2V59bPu06RgUCjlGrwiV5Dn/Y2jY0bY=", "id"=>"15"}
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Redirected to http://localhost:3000/articles/15
+Completed in 32ms (DB: 0) | 302 Found [http://localhost/articles/15]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-21 02:10:40) [GET]
+  Parameters: {"id"=>"15"}
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 54ms (View: 30, DB: 0) | 200 OK [http://localhost/articles/15]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-21 02:10:44) [GET]
+  [4;35;1mArticle Load (2.3ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 164ms (View: 138, DB: 2) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-21 02:10:47) [GET]
+  Parameters: {"id"=>"15"}
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 46ms (View: 23, DB: 0) | 200 OK [http://localhost/articles/15/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-21 02:10:49) [PUT]
+  Parameters: {"article"=>{"author"=>"Unknown", "title"=>"10 Tips For Sleeping on Airplanes", "fulltext"=>"We all want to arrive at our destination relaxed and refreshed but that does not always happen. Getting some sleep when traveling across time zones or on long flights is often necessary but not always accomplished. Here are some tips to help you get some shut-eye on your next flight."}, "commit"=>"Save Changes", "authenticity_token"=>"Jr5s7llgEEPf2V59bPu06RgUCjlGrwiV5Dn/Y2jY0bY=", "id"=>"15"}
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Redirected to http://localhost:3000/articles/15
+Completed in 33ms (DB: 0) | 302 Found [http://localhost/articles/15]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-21 02:10:49) [GET]
+  Parameters: {"id"=>"15"}
+  [4;36;1mArticle Load (1.0ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 55ms (View: 30, DB: 1) | 200 OK [http://localhost/articles/15]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-21 02:10:57) [GET]
+  Parameters: {"id"=>"15"}
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 47ms (View: 23, DB: 0) | 200 OK [http://localhost/articles/15/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-21 02:11:00) [PUT]
+  Parameters: {"article"=>{"author"=>"Unknown", "title"=>"10 Tips For Sleeping on Airplanes", "fulltext"=>"We all want to arrive at our destination relaxed and refreshed but that does not always happen. Getting some sleep when traveling across time zones or on long flights is often necessary but not always accomplished. Here are some tips to help you get some shut-eye on your next flight."}, "commit"=>"Save Changes", "authenticity_token"=>"Jr5s7llgEEPf2V59bPu06RgUCjlGrwiV5Dn/Y2jY0bY=", "id"=>"15"}
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Redirected to http://localhost:3000/articles/15
+Completed in 33ms (DB: 0) | 302 Found [http://localhost/articles/15]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-21 02:11:00) [GET]
+  Parameters: {"id"=>"15"}
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 54ms (View: 30, DB: 0) | 200 OK [http://localhost/articles/15]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-21 02:11:29) [GET]
+  Parameters: {"id"=>"15"}
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 54ms (View: 31, DB: 0) | 200 OK [http://localhost/articles/15]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-21 02:11:33) [GET]
+  Parameters: {"id"=>"15"}
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 46ms (View: 23, DB: 0) | 200 OK [http://localhost/articles/15/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-21 02:11:41) [PUT]
+  Parameters: {"article"=>{"author"=>"Unknown", "title"=>"10 Tips For Sleeping on Airplanes", "fulltext"=>"We all want to arrive at our destination relaxed and refreshed but that does not always happen. Getting some sleep when traveling across time zones or on long flights is often necessary but not always accomplished. Here are some tips to help you get some shut-eye on your next flight."}, "commit"=>"Save Changes", "authenticity_token"=>"Jr5s7llgEEPf2V59bPu06RgUCjlGrwiV5Dn/Y2jY0bY=", "id"=>"15"}
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Redirected to http://localhost:3000/articles/15
+Completed in 32ms (DB: 0) | 302 Found [http://localhost/articles/15]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-21 02:11:41) [GET]
+  Parameters: {"id"=>"15"}
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 56ms (View: 31, DB: 0) | 200 OK [http://localhost/articles/15]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-21 02:11:43) [GET]
+  [4;36;1mArticle Load (2.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 276ms (View: 250, DB: 2) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-21 02:11:46) [GET]
+  Parameters: {"id"=>"15"}
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 49ms (View: 24, DB: 0) | 200 OK [http://localhost/articles/15/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-21 02:11:48) [PUT]
+  Parameters: {"article"=>{"author"=>"Unknown", "title"=>"10 Tips For Sleeping on Airplanes", "fulltext"=>"We all want to arrive at our destination relaxed and refreshed but that does not always happen. Getting some sleep when traveling across time zones or on long flights is often necessary but not always accomplished. Here are some tips to help you get some shut-eye on your next flight."}, "commit"=>"Save Changes", "authenticity_token"=>"Jr5s7llgEEPf2V59bPu06RgUCjlGrwiV5Dn/Y2jY0bY=", "id"=>"15"}
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Redirected to http://localhost:3000/articles/15
+Completed in 33ms (DB: 0) | 302 Found [http://localhost/articles/15]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-21 02:11:48) [GET]
+  Parameters: {"id"=>"15"}
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 54ms (View: 31, DB: 0) | 200 OK [http://localhost/articles/15]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-21 02:12:06) [GET]
+  Parameters: {"id"=>"15"}
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 46ms (View: 23, DB: 0) | 200 OK [http://localhost/articles/edit/15]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-21 02:12:12) [PUT]
+  Parameters: {"article"=>{"author"=>"Unknown", "title"=>"10 Tips For Sleeping on Airplanes", "fulltext"=>"We all want to arrive at our destination relaxed and refreshed but that does not always happen. Getting some sleep when traveling across time zones or on long flights is often necessary but not always accomplished. Here are some tips to help you get some shut-eye on your next flight."}, "commit"=>"Save Changes", "authenticity_token"=>"Jr5s7llgEEPf2V59bPu06RgUCjlGrwiV5Dn/Y2jY0bY=", "id"=>"15"}
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Redirected to http://localhost:3000/articles/15
+Completed in 33ms (DB: 0) | 302 Found [http://localhost/articles/15]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-21 02:12:13) [GET]
+  Parameters: {"id"=>"15"}
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 54ms (View: 30, DB: 0) | 200 OK [http://localhost/articles/15]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-21 02:12:15) [GET]
+  Parameters: {"id"=>"15"}
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 46ms (View: 23, DB: 0) | 200 OK [http://localhost/articles/15/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-21 02:15:21) [GET]
+  Parameters: {"id"=>"15"}
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+
+ActionView::TemplateError (undefined method `link_to' for #<ActionView::Helpers::FormBuilder:0x223b2a0>) on line #29 of app/views/articles/edit.html.erb:
+26:     <%= f.text_area :fulltext %>
+27:   </p>
+28:   <p>
+29:     <%= f.link_to 'Save Changes', session[:edit_referer] %>
+30:   </p>
+31: <% end %>
+
+    app/views/articles/edit.html.erb:29
+    app/views/articles/edit.html.erb:13
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (101.7ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-21 02:16:57) [GET]
+  Parameters: {"id"=>"15"}
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 58ms (View: 35, DB: 0) | 200 OK [http://localhost/articles/15/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-21 02:17:01) [PUT]
+  Parameters: {"article"=>{"author"=>"Unknown", "title"=>"10 Tips For Sleeping on Airplanes", "fulltext"=>"We all want to arrive at our destination relaxed and refreshed but that does not always happen. Getting some sleep when traveling across time zones or on long flights is often necessary but not always accomplished. Here are some tips to help you get some shut-eye on your next flight."}, "commit"=>"Save Changes", "authenticity_token"=>"Jr5s7llgEEPf2V59bPu06RgUCjlGrwiV5Dn/Y2jY0bY=", "id"=>"15"}
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Redirected to http://localhost:3000/articles/15
+Completed in 31ms (DB: 0) | 302 Found [http://localhost/articles/15]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-21 02:17:01) [GET]
+  Parameters: {"id"=>"15"}
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 54ms (View: 30, DB: 0) | 200 OK [http://localhost/articles/15]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-21 02:17:03) [GET]
+  [4;36;1mArticle Load (2.2ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 164ms (View: 139, DB: 2) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-21 02:17:06) [GET]
+  Parameters: {"id"=>"15"}
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 46ms (View: 23, DB: 0) | 200 OK [http://localhost/articles/15/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-21 02:17:08) [PUT]
+  Parameters: {"article"=>{"author"=>"Unknown", "title"=>"10 Tips For Sleeping on Airplanes", "fulltext"=>"We all want to arrive at our destination relaxed and refreshed but that does not always happen. Getting some sleep when traveling across time zones or on long flights is often necessary but not always accomplished. Here are some tips to help you get some shut-eye on your next flight."}, "commit"=>"Save Changes", "authenticity_token"=>"Jr5s7llgEEPf2V59bPu06RgUCjlGrwiV5Dn/Y2jY0bY=", "id"=>"15"}
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Redirected to http://localhost:3000/articles
+Completed in 119ms (DB: 0) | 302 Found [http://localhost/articles/15]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-21 02:17:08) [GET]
+  [4;35;1mArticle Load (2.3ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 165ms (View: 140, DB: 2) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-21 02:17:23) [GET]
+  [4;36;1mArticle Load (2.3ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 165ms (View: 140, DB: 2) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-21 02:17:26) [GET]
+  Parameters: {"id"=>"15"}
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 58ms (View: 35, DB: 0) | 200 OK [http://localhost/articles/15/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-21 02:17:29) [PUT]
+  Parameters: {"article"=>{"author"=>"Unknown", "title"=>"10 Tips For Sleeping on Airplanes", "fulltext"=>"We all want to arrive at our destination relaxed and refreshed but that does not always happen. Getting some sleep when traveling across time zones or on long flights is often necessary but not always accomplished. Here are some tips to help you get some shut-eye on your next flight."}, "commit"=>"Save Changes", "authenticity_token"=>"Jr5s7llgEEPf2V59bPu06RgUCjlGrwiV5Dn/Y2jY0bY=", "id"=>"15"}
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Redirected to http://localhost:3000/articles
+Completed in 31ms (DB: 0) | 302 Found [http://localhost/articles/15]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-21 02:17:29) [GET]
+  [4;35;1mArticle Load (2.7ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 166ms (View: 140, DB: 3) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-21 02:17:33) [GET]
+  Parameters: {"id"=>"15"}
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 47ms (View: 24, DB: 0) | 200 OK [http://localhost/articles/15/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-21 02:17:35) [PUT]
+  Parameters: {"article"=>{"author"=>"Unknown", "title"=>"10 Tips For Sleeping on Airplanes", "fulltext"=>"We all want to arrive at our destination relaxed and refreshed but that does not always happen. Getting some sleep when traveling across time zones or on long flights is often necessary but not always accomplished. Here are some tips to help you get some shut-eye on your next flight."}, "commit"=>"Save Changes", "authenticity_token"=>"Jr5s7llgEEPf2V59bPu06RgUCjlGrwiV5Dn/Y2jY0bY=", "id"=>"15"}
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Redirected to http://localhost:3000/articles
+Completed in 31ms (DB: 0) | 302 Found [http://localhost/articles/15]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-21 02:17:35) [GET]
+  [4;36;1mArticle Load (2.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 173ms (View: 148, DB: 2) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-21 02:17:38) [GET]
+  Parameters: {"id"=>"15"}
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 55ms (View: 31, DB: 0) | 200 OK [http://localhost/articles/15]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-21 02:17:40) [GET]
+  Parameters: {"id"=>"15"}
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 46ms (View: 23, DB: 0) | 200 OK [http://localhost/articles/15/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-21 02:17:42) [PUT]
+  Parameters: {"article"=>{"author"=>"Unknown", "title"=>"10 Tips For Sleeping on Airplanes", "fulltext"=>"We all want to arrive at our destination relaxed and refreshed but that does not always happen. Getting some sleep when traveling across time zones or on long flights is often necessary but not always accomplished. Here are some tips to help you get some shut-eye on your next flight."}, "commit"=>"Save Changes", "authenticity_token"=>"Jr5s7llgEEPf2V59bPu06RgUCjlGrwiV5Dn/Y2jY0bY=", "id"=>"15"}
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Redirected to http://localhost:3000/articles/15
+Completed in 31ms (DB: 0) | 302 Found [http://localhost/articles/15]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-21 02:17:42) [GET]
+  Parameters: {"id"=>"15"}
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 55ms (View: 31, DB: 0) | 200 OK [http://localhost/articles/15]

@@ -1,6 +1,9 @@
 class ArticlesController < ApplicationController
   # GET /articles
   # GET /articles.xml
+  
+  before_filter :save_edit_referer, :only => [:edit]
+  
   def index
     @articles = Article.all
 
@@ -60,7 +63,7 @@ class ArticlesController < ApplicationController
 
     respond_to do |format|
       if @article.update_attributes(params[:article])
-        format.html { redirect_to(@article, :notice => 'Article was successfully updated.') }
+        format.html { redirect_to(session[:edit_referer], :notice => 'Article was successfully updated.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -80,4 +83,10 @@ class ArticlesController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
+private
+	def save_edit_referer
+		session[:edit_referer] = request.referer
+	end
+
 end

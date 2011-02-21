@@ -1,0 +1,30 @@
+<% content_for :subtitle do %>
+...not just for the country of Spain
+<% end %>
+
+<% content_for :link_bar do %>
+	<%= all_articles_link_image %>
+	<%= all_articles_link %>
+<% end %>
+
+<h2>Creating a New article</h2>
+
+<% form_for(@article) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :author %>
+    <%= f.text_field :author %>
+  </p>
+  <p>
+    <%= f.label :fulltext %>
+    <%= f.text_area :fulltext %>
+  </p>
+  <p>
+    <%= f.submit 'Create!' %>
+  </p>
+<% end %>

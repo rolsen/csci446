@@ -1,0 +1,25 @@
+<% content_for :subtitle do %>
+...what's "Articl" in Spanish anyway?
+<% end %>
+
+<% content_for :link_bar do %>
+	<%= all_articles_link_image %>
+	<%= all_articles_link %>
+	<%= edit_link_image %>
+	<%= edit_link %>
+	<%= delete_link_image %>
+	<%= delete_link %>
+	<%= mail_to '', image_tag('email.png'), :subject => @article.title, :body => article_url(@article), :title => 'email this article' %>
+	<%= mail_to '', 'email', :subject => @article.title, :body => article_url(@article), :title => 'email this article' %>
+<% end %>
+
+
+<h2><%=h @article.title %></h2>
+
+<p>by <%=h @article.author %>. <%= @article.update_count %> edits since 
+	<%= @article.created_at.to_s(:create_date) %>.
+</p>
+
+<p>
+  <%=h  @article.fulltext %>
+</p>

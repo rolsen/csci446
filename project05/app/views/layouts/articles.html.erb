@@ -1,20 +1,25 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-  <title>Articl.es -- All the World's Articles (with a name .com hipsters love)</title>
-  <%= stylesheet_link_tag "articles", :media => "all" %>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Articles: <%= controller.action_name %></title>
+  <%= stylesheet_link_tag 'screen' %>
 </head>
-<body id="article">
-  <div id="header">
+<body>
+	<div id="header">
   	<h1>Articl.es</h1>
-  	<h3><%= yield(:subtitle) || display_random_subtitle %></h3>
+  	<h3><%= yield(:subtitle) %></h3>
   </div>
+  <div id="link_bar">
+  	<%= yield(:link_bar) %>
+	</div>
   <div id="main">
-  		<% if flash[:notice] -%>
-  			<div id="notice"><%= flash[:notice] %></div>
-  		<% end %>
   		<%= yield %>
   </div>
+
+<p style="color: green"><%= notice %></p>
+
 </body>
 </html>

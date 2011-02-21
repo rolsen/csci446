@@ -1,0 +1,30 @@
+<% content_for :subtitle do %>
+...my cousin works for Bit.ly
+<% end %>
+
+<% content_for :link_bar do %>
+	<%= link_to image_tag('arrow_left.png'), session[:edit_referer], :title => 'go back' %>
+	<%= link_to 'back', session[:edit_referer], :title => 'go back' %>
+<% end %>
+
+<h2>Editing "<%=h @article.title %>"</h2>
+
+<% form_for(@article) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :author %>
+    <%= f.text_field :author %>
+  </p>
+  <p>
+    <%= f.label :fulltext %>
+    <%= f.text_area :fulltext %>
+  </p>
+  <p>
+    <%= f.submit 'Save Changes' %>
+  </p>
+<% end %>

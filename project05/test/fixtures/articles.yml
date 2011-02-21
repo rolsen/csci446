@@ -2,10 +2,12 @@
 
 one:
   title: MyString
-  autor: MyString
-  fulltext: MyString
+  author: MyString
+  fulltext: MyText
+  update_count: 1
 
 two:
   title: MyString
-  autor: MyString
-  fulltext: MyString
+  author: MyString
+  fulltext: MyText
+  update_count: 1

@@ -2095,3 +2095,18 @@ Processing ArticlesController#show (for 127.0.0.1 at 2011-02-20 16:36:28) [GET]
 Rendering template within layouts/articles
 Rendering articles/show
 Completed in 58ms (View: 35, DB: 0) | 200 OK [http://localhost/articles/3]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-20 16:55:44) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 115ms (View: 91, DB: 0) | 200 OK [http://localhost/articles/3]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-20 16:56:03) [GET]
+  [4;35;1mArticle Load (2.1ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 172ms (View: 147, DB: 2) | 200 OK [http://localhost/articles]

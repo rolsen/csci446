@@ -14,7 +14,7 @@
 <h2><%=h @article.title %></h2>
 
 <p>by <%=h @article.author %>. <%= @article.update_count %> edits since 
-	<%= @article.created_at.to_s(:short) %>.
+	<%= @article.created_at.to_s(:create_date) %>.
 </p>
 
 <p>

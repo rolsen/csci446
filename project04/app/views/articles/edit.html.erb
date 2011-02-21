@@ -7,31 +7,24 @@
 	<%= back_link %>
 <% end %>
 
-<h1>Editing article</h1>
+<h2>Editing "<%=h @article.title %>"</h2>
 
 <% form_for(@article) do |f| %>
   <%= f.error_messages %>
 
   <p>
-    <%= f.label :title %><br />
+    <%= f.label :title %>
     <%= f.text_field :title %>
   </p>
   <p>
-    <%= f.label :author %><br />
+    <%= f.label :author %>
     <%= f.text_field :author %>
   </p>
   <p>
-    <%= f.label :fulltext %><br />
+    <%= f.label :fulltext %>
     <%= f.text_area :fulltext %>
   </p>
   <p>
-    <%= f.label :update_count %><br />
-    <%= f.text_field :update_count %>
-  </p>
-  <p>
-    <%= f.submit 'Update' %>
+    <%= f.submit 'Save Changes' %>
   </p>
 <% end %>
-
-<%= link_to 'Show', @article %> |
-<%= link_to 'Back', articles_path %>

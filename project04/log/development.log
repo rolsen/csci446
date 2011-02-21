@@ -3080,3 +3080,35 @@ Processing ArticlesController#index (for 127.0.0.1 at 2011-02-20 23:09:36) [GET]
 Rendering template within layouts/articles
 Rendering articles/index
 Completed in 169ms (View: 144, DB: 2) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-20 23:10:52) [GET]
+  Parameters: {"id"=>"15"}
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 52ms (View: 29, DB: 0) | 200 OK [http://localhost/articles/15/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-20 23:12:50) [GET]
+  Parameters: {"id"=>"15"}
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 63ms (View: 41, DB: 0) | 200 OK [http://localhost/articles/15/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-20 23:14:07) [GET]
+  Parameters: {"id"=>"15"}
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 62ms (View: 40, DB: 0) | 200 OK [http://localhost/articles/15/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-21 01:17:57) [GET]
+  Parameters: {"id"=>"15"}
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 15) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 59ms (View: 37, DB: 0) | 200 OK [http://localhost/articles/15/edit]

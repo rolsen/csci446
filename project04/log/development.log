@@ -3112,3 +3112,22 @@ Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-21 01:17:57) [GET]
 Rendering template within layouts/articles
 Rendering articles/edit
 Completed in 59ms (View: 37, DB: 0) | 200 OK [http://localhost/articles/15/edit]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-21 01:19:08) [GET]
+  [4;36;1mArticle Load (2.2ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 260ms (View: 235, DB: 2) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-21 01:19:16) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 47ms (View: 26, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-21 01:21:04) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 55ms (View: 34, DB: 0) | 200 OK [http://localhost/articles/new]
